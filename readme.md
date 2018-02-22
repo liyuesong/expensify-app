@@ -20,7 +20,7 @@ cd expensify-app
     ```
     yarn run dev-server
     ```
-    or,
+- or,
     using live-server, do:
     ```
     yarn run build
