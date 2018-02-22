@@ -4,8 +4,6 @@ const express = require('express');
 const app = express();
 
 const publicPath = path.join(__dirname, '..', 'public');
-const port = process.env.PORT || 3000;
-
 // serve up public folder and everything inside
 app.use(express.static(publicPath)); // customise express server, use this to register a middleware: something that run for each request
 
@@ -18,6 +16,6 @@ app.get('*', (req, res) => {
 });
 
 // start up the server: listen on specific port
-app.listen(port, () => {
+app.listen(3000, () => {
     console.log("Server is up!");
 });
